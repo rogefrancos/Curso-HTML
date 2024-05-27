@@ -14,17 +14,17 @@ body {
     margin: 8px;
 }
 
-.grid-container>*:not(.grid-itemmc, .grid-item1){
+.grid-container>*:not(.grid-itemmc, .grid-item1, .grid-itemtacos){
+
   color: white;
   border-radius: 8px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   background-color: #666;
 }
 
 .grid-item1{
-    
     color: white;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -38,7 +38,7 @@ body {
 }
 
 .grid-itemmc{
-  color: white;
+  color: rgb(243, 219, 0);
   grid-column-start: 1;
   grid-column-end: 5;
   
@@ -51,6 +51,21 @@ body {
   background-image: url(/xampp/htdocs/ProyectosHTML/RogerEats/images/mcbanner2.jpg) repeat;
   background-color: red;
 }
+
+.grid-itemtacos{
+  color: #fb6306;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  
+  height: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 30px;
+  text-align: center;
+
+  background-color: #fb6306;
+}
+
 
 ul {
     position: fixed;
