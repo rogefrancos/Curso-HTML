@@ -1,0 +1,103 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 2px;
+  }
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aliceblue;
+
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.grid-container>*:not(.grid-itemmc, .grid-item1){
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #666;
+}
+
+.grid-item1{
+    
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    height: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(1, 146, 146);
+}
+
+.grid-itemmc{
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  
+  height: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 30px;
+  text-align: center;
+
+  background-image: url(/xampp/htdocs/ProyectosHTML/RogerEats/images/mcbanner2.jpg) repeat;
+  background-color: red;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family: Arial;
+    line-height: 2.8;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 40px;
+  }
+
+  a:hover:not(.active){
+    background-color: #111;
+  }
+
+  .active {
+    background-color: rgb(1, 146, 146);
+  }
+
+  .btn {
+    background-color: rgb(1, 146, 146);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(1, 110, 110);
+  }
