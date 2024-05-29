@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Rogers Eat's</title>
+    <link rel="stylesheet" href="css\styles.css" type="text/css">
+    <title>Roger Eat's</title>
 </head>
 <body>
 
     <ul>
         <li><a  class="active" href="index.html">Roger Eat's</a></li>
-        <li style="float:right"><a href="checkout.html"><img src="shopppingicon.png" alt="shopppingicon" style="width:35px;height:35px;"></a></li>
+        <li style="float:right"><a href="checkout.html"><img src="images/shopppingicon.png" alt="shopppingicon" style="width:35px;height:35px;"></a></li>
       </ul> 
 
     <br><br><br>
@@ -20,90 +20,98 @@
     <div class="grid-container">
         <div class="grid-itemmc"><h2>McDonald's</h2></div>
         <div class="grid-item">
-            <img src="cheesebrgr.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/cheesebrgr.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Hamburguesa Sencilla</p>
             $70
             <br>
-            <form action="input.php" method="post">
+            <input type="hidden" name="product_id" value="mc1">
             <input type="submit" value="Agregar" class="btn" name="foodmc1">     
             </form>
             
         </div>
         <div class="grid-item">
-            <img src="fries.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/fries.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Papas</p>
             $49
             <br>
+            <input type="hidden" name="product_id" value="mc2">
             <input type="submit" value="Agregar" class="btn" name="foodmc2"> 
         </div>
         <div class="grid-item">
-            <img src="nuggets6p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/nuggets6p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Nuggets 6 pzas</p>
             $79
             <br>
+            <input type="hidden" name="product_id" value="mc3">
             <input type="submit" value="Agregar" class="btn" name="foodmc3"> 
         </div>
         <div class="grid-item">
-            <img src="nuggets20p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/nuggets20p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Nuggets 20 pzas</p>
             $189
             <br>
+            <input type="hidden" name="product_id" value="mc4">
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc4"> 
         </div>
         <div class="grid-item">
-            <img src="nuggets20p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/nuggets20p.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Nuggets 20 pzas</p>
             $189
             <br>
+            <input type="hidden" name="product_id" value="mc5">
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc5"> 
         </div>
         <div class="grid-item">
-            <img src="mcpollo.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/mcpollo.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>McPollo</p>
             $70
+            <?php echo'holamundo'?>
             <br>
+            <input type="hidden" name="product_id" value="mc6">
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc6"> 
         </div>
         <div class="grid-item">
-            <img src="soda.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/soda.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Refresco</p>
             $39
             <br>
+            <input type="hidden" name="product_id" value="mc7">
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc7"> 
         </div>
         <div class="grid-item">
-            <img src="mcflurry.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/mcflurry.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>McFlurry</p>
             $60
             <br>
+            <input type="hidden" name="product_id" value="mc8">
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc8"> 
         </div>
     </div>
     <div class="grid-container">
-        <div class="grid-itemtacos"><img src="tacosbjto.png" alt="shopppingicon" style="width:250px;height:220px;"></div>
+        <div class="grid-itemtacos"><img src="images/tacosbjto.png" alt="shopppingicon" style="width:250px;height:220px;"></div>
         <div class="grid-item">
-            <img src="bistec.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/bistec.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Taco de bistec</p>
             $22
             <br>
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodtc1"> 
         </div>
         <div class="grid-item">
-            <img src="pastor.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/pastor.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Taco de pastor</p>
             $22
             <br>
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodmc2"> 
         </div>
         <div class="grid-item">
-            <img src="chorizo.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/chorizo.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Taco de chorizo</p>
             $22
             <br>
             <input type="submit" value="Agregar" class="btn" class="btn" name="foodtc3"> 
         </div>
         <div class="grid-item">
-            <img src="arrachera.jpg" alt="shopppingicon" style="width:300px;height:250px;">
+            <img src="images/arrachera.jpg" alt="shopppingicon" style="width:300px;height:250px;">
             <p>Taco de arrachera</p>
             $30
             <br>

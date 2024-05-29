@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css" type="text/css">
+    <link rel="stylesheet" href="css\styles2.css" type="text/css">
     <title>Roger Eat's</title>
 </head>
 <body>
     <ul>
         <li> <a href="index.html">Roger Eat's</a></li>
-        <li style="float:right"> <a class="active" href="checkout.html"><img src="shopppingicon.png" alt="shopppingicon" style="width:35px;height:35px;"></a></li>
+        <li style="float:right"> <a class="active" href="checkout.html"><img src="images/shopppingicon.png" alt="shopppingicon" style="width:35px;height:35px;"></a></li>
     </ul>
 
     <br><br><br><br>
@@ -69,10 +69,31 @@
         </div>
         <div class="col-25">
           <div class="container">
-            <h4>Carrito <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>0</b></span></h4>
-            <p></p>
+            <h4>Carrito <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b><?php echo $numArticulos; ?></b></span></h4>
+
+            <?php
+
+    $productos = array(
+        'mc1' => array('nombre' => 'Hamburguesa Sencilla', 'precio' => 70),
+        'mc2' => array('nombre' => 'Papas', 'precio' => 49),
+        'mc3' => array('nombre' => 'Nuggets 6 pzas', 'precio' => 79),
+        'mc4' => array('nombre' => 'Nuggets 20 pzas', 'precio' => 189),
+        'mc5' => array('nombre' => 'Nuggets 20 pzas', 'precio' => 189),
+        'mc6' => array('nombre' => 'McPollo', 'precio' => 70),
+        'mc7' => array('nombre' => 'Refresco', 'precio' => 39),
+        'mc8' => array('nombre' => 'McFlurry', 'precio' => 60),
+    );
+
+    $total = 0;
+
+    foreach ($productos as $id => $producto) {
+        echo '<p>' . $producto['nombre'] . ': $' . $producto['precio'] . '</p>';
+        $total += $producto['precio'];
+    }
+    ?>
+
             <hr>
-            <p>Total $0</p>
+            <p>Total: $<?php echo $total; ?></p>
           </div>
         </div>
       </div>
